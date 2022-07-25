@@ -9,6 +9,7 @@ const WorkCard = ({ images, name, period, description, onClick, stack, detail, g
     return (
         <div
             className="overflow-hidden cursor-pointer rounded-lg p-2 laptop:p-4 first:ml-0"
+            style={{minWidth:1500}}
             onClick={onClick}
         >
 

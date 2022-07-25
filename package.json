@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "nodemon --exec 'next build && next start'",
+    "start": "next start",
+    "start:dev": "nodemon --exec 'next build && next start'",
     "lint": "next lint"
   },
   "dependencies": {
