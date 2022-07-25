@@ -25,7 +25,7 @@ export default function Home() {
     // Handling Scroll
     const handleWorkScroll = () => {
         window.scrollTo({
-            top: workRef.current.offsetTop,
+            top: workRef.current.offsetTop - 60,
             left: 0,
             behavior: "smooth",
         });
@@ -33,7 +33,7 @@ export default function Home() {
 
     const handleAboutScroll = () => {
         window.scrollTo({
-            top: aboutRef.current.offsetTop,
+            top: aboutRef.current.offsetTop - 60,
             left: 0,
             behavior: "smooth",
         });
@@ -102,23 +102,54 @@ export default function Home() {
                     <Socials className="mt-2 laptop:mt-5" />
                 </div>
                 <div
+                    className="mt-10 laptop:mt-10 p-2 laptop:p-0"
+                    ref={aboutRef}
+                >
+                    <h1 className="text-2xl text-bold">About.</h1>
+                    <table className="mt-5">
+                        <thead>
+                            <tr>
+                                <td style={{width:100}}></td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>이름</td>
+                                <td>임동준</td>
+                            </tr>
+                            <tr>
+                                <td>학력</td>
+                                <td>광운대학교 컴퓨터공학과 졸업</td>
+                            </tr>
+                            <tr>
+                                <td>경력</td>
+                                <td>씨젠 웹개발 (2020.10 ~ 2022.05)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+                <div
                     className="mt-10 laptop:mt-30 p-2 laptop:p-0"
                     ref={workRef}
                 >
-                    <h1 className="text-2xl text-bold">Work.</h1>
-                    <div className="mt-5 laptop:mt-10 grid grid-cols-1 tablet:grid-cols-2 gap-4">
+                    <h1 className="text-2xl text-bold">Project</h1>
+                    <div className="mt-5 laptop:mt-10">
                         {data.projects.map((project) => (
                             <WorkCard
                                 key={project.id}
-                                img={project.imageSrc}
+                                images={project.images}
                                 name={project.title}
+                                period={project.period}
                                 description={project.description}
-                                onClick={() => window.open(project.url)}
+                                stack={project.stack}
+                                detail={project.detail}
+                                github={project.github}
                             />
                         ))}
                     </div>
                 </div>
-                <div className="mt-10 laptop:mt-30 p-2 laptop:p-0">
+                {/* <div className="mt-10 laptop:mt-30 p-2 laptop:p-0">
                     <h1 className="tablet:m-10 text-2xl text-bold">
                         Services.
                     </h1>
@@ -131,18 +162,13 @@ export default function Home() {
                             />
                         ))}
                     </div>
-                </div>
-                <div
-                    className="mt-10 laptop:mt-40 p-2 laptop:p-0"
-                    ref={aboutRef}
-                >
-                    <h1 className="tablet:m-10 text-2xl text-bold">About.</h1>
-                    <p className="tablet:m-10 mt-2 text-xl laptop:text-3xl w-full laptop:w-3/5">
-                        {data.aboutpara}
-                    </p>
-                </div>
+                </div> */}
+                
                 <Footer />
             </div>
         </>
     );
 }
+
+
+

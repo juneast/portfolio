@@ -1,102 +1,181 @@
 {
-    "name": "Chetan",
-    "headerTaglineOne": "Hello 👋",
-    "headerTaglineTwo": "I'm Chetan Verma - curious",
-    "headerTaglineThree": "designer and devloper",
-    "headerTaglineFour": " based in New Delhi, India.",
-    "showBlog": true,
+    "name": "PORTFOLIO",
+    "headerTaglineOne": "웹 개발자 임동준",
+    "headerTaglineTwo": "포트폴리오입니다",
+    "showBlog": false,
     "socials": [
         {
             "title": "Github",
-            "link": "https://github.com/chetanverma16"
-        },
-        {
-            "title": "LinkedIn",
-            "link": "https://www.linkedin.com/in/chetanverma7/"
-        },
-        {
-            "title": "Twitter",
-            "link": "https://twitter.com/realchetanverma"
-        },
-        {
-            "title": "Blog",
-            "link": "https://blog.chetanverma.com/"
+            "link": "https://github.com/juneast"
         },
         {
             "title": "Email",
-            "link": "mailto:hello@chetanverma.com"
+            "link": "mailto:dlaehd1994@naver.com"
         }
     ],
     "projects": [
         {
             "id": "1",
-            "title": "Project w Test",
-            "description": "Web Design",
-            "imageSrc": "https://images.unsplash.com/photo-1487837647815-bbc1f30cd0d2?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8Njl8fHBhc3RlbHxlbnwwfHwwfA%3D%3D&auto=format&fit=crop&w=400&q=60",
-            "url": "http://chetanverma.com/"
+            "title": "연구보조 웹 서비스 개발",
+            "period": "2020.10 ~ 2021.11",
+            "description" : [
+                "도구 단위의 웨 서비스, 주로 유전자 증폭에 대한 분석 수행"
+            ],
+            "images" : [
+                {
+                    "url" : "/img/etools.png"
+                }
+            ],
+            "url": ".",
+            "stack":[
+                "React",
+                "Typescript",
+                "Java",
+                "Spring Boot"
+            ],
+            "detail" : [
+                {
+                    "subTitle" : "주요 기능",
+                    "context" : [
+                        "염기서열의 반응 옹도 기준으로 입력된 염기서열을 N번 반복 반응시켜 생성된 산출물 시각화",
+                        "PCR raw data 시각화 / 보정을 위한 Reference value 도출",
+                        "신기술에 적용될 특정 조건을 만족하는 염기서열 생성 및 반응 시각화"
+                    ]
+                },
+                {
+                    "subTitle" : "담당 파트",
+                    "context" : [
+                        "요구사항 기반 화면 설계, 개발",
+                        "유전자 증폭 분석 로직 개발 및 API 제공"
+                    ]
+                },
+                {
+                    "subTitle" : "사용 기술",
+                    "context" : [
+                        "Recoil을 통한 Front-end 상태관리",
+                        "Jest, Junit을 사용한 테스트 코드 작성",
+                        "RESTFul API 기반 클라이언트-서버 통신",
+                        "gitlab-runner CI/CD, Docker image 기반 관리",
+                        "ORM, JPA를 통한 Database 관리"
+                    ]
+                }
+            ],
+            "github":[]
         },
         {
             "id": "2",
-            "title": "Project Two",
-            "description": "Web Development",
-            "imageSrc": "https://images.unsplash.com/photo-1605153864431-a2795a1b2f95?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MXwyNTY3ODl8fGVufDB8fHw%3D&auto=format&fit=crop&w=400&q=60",
-            "url": "http://chetanverma.com/"
+            "title": "싸그리(블라인드 앱 클론 코딩)",
+            "period": "2020.05 ~ 2020.06",
+            "description" : [
+                "React-native, Nodejs + NoSQL 서버 개발 스터디 목적의 프로젝트"
+            ],
+            "images" : [
+                {
+                    "url" : "/img/login.jpeg"
+                },
+                {
+                    "url" : "/img/timeline_with_picture.jpeg"
+                },
+                {
+                    "url" : "/img/details.jpeg"
+                },
+                {
+                    "url" : "/img/mypage.jpeg"
+                }
+            ],
+            "url": ".",
+            "stack":[
+                "React-native",
+                "Javscript",
+                "Nodejs",
+                "AWS",
+                "MongoDB"
+            ],
+            "detail" : [
+                {
+                    "subTitle" : "주요 기능",
+                    "context" : [
+                        "이메일 토큰을 통한 사용자 가입",
+                        "타임라인 제공(이미지 썸네일 포함), Tag기반 게시글 모아보기",
+                        "게시글 작성(이미지 포함), 수정, 삭제, 검색, 좋아요, 조회, 조회수 확인 기능",
+                        "댓글, 대댓글 작성 및 수정 기능(삭제시 '삭제된 댓글입니다'표기)",
+                        "내가 쓴 글 모아보기"
+                    ]
+                },
+                {
+                    "subTitle" : "사용 기술",
+                    "context" : [
+                        "JWT기반 API Server Access",
+                        "AWS EC2 서버 배포, S3 저장소 이미지 저장"
+                    ]
+                }
+            ],
+            "github":[
+                {
+                    "name" : "Front",
+                    "url" : "https://github.com/juneast/Sagri"
+                },
+                {
+                    "name" : "Back",
+                    "url" : "https://github.com/juneast/node-server"
+                }
+            ]
         },
         {
             "id": "3",
-            "title": "Project Three",
-            "description": "Design",
-            "imageSrc": "https://images.unsplash.com/photo-1504083898675-c896ecdae86e?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MjJ8fHBhc3RlbHxlbnwwfHwwfA%3D%3D&auto=format&fit=crop&w=400&q=60",
-            "url": "http://chetanverma.com/"
-        },
-        {
-            "id": "4",
-            "title": "Project Four",
-            "description": "Marketing",
-            "imageSrc": "https://images.unsplash.com/photo-1492171983775-a51717616c0d?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8NjB8fHBhc3RlbHxlbnwwfHwwfA%3D%3D&auto=format&fit=crop&w=400&q=60",
-            "url": "http://chetanverma.com/"
-        },
-        {
-            "id": "5",
-            "title": "Project Five",
-            "description": "Development",
-            "imageSrc": "https://images.unsplash.com/photo-1534239143101-1b1c627395c5?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8NzZ8fHBhc3RlbHxlbnwwfHwwfA%3D%3D&auto=format&fit=crop&w=400&q=60",
-            "url": "http://chetanverma.com/"
-        },
-        {
-            "id": "6",
-            "title": "Project Six",
-            "description": "Design & Development",
-            "imageSrc": "https://images.unsplash.com/photo-1517479149777-5f3b1511d5ad?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTAyfHxwYXN0ZWx8ZW58MHx8MHw%3D&auto=format&fit=crop&w=400&q=60",
-            "url": "http://chetanverma.com/"
+            "title": "스마트폰 사용패턴 기반 상황인지 기술 개발",
+            "period": "2018",
+            "description" : [
+                "데이터의 수집부터 관리, 가공, 사용까지 전 과정을 아우르는 서비스 제공"
+            ],
+            "images" : [
+                {
+                    "url" : "/img/data-collector.png"
+                },
+                {
+                    "url" : "/img/data-web.png"
+                },
+                {
+                    "url" : "/img/data-sample.png"
+                },
+                {
+                    "url" : "/img/structure.png"
+                }
+            ],
+            "url": ".",
+            "stack":[
+                "Android",
+                "Java",
+                "Python",
+                "Machine Learning(SVM)",
+                "GCP"
+            ],
+            "detail" : [
+                {
+                    "subTitle" : "주요 기능",
+                    "context" : [
+                        "스마트폰 데이터 수집(조도, dB, 걸음수, 앱사용, 위치정보 등)",
+                        "수집 데이터 웹 시각화",
+                        "수면시간, 일조량, 라이프 스코어 제공"
+                    ]
+                },
+                {
+                    "subTitle" : "담당 파트",
+                    "context" : [
+                        "스마트폰 데이터 수집 앱 개발",
+                        "수집 데이터 전처리 및 가공",
+                        "수면시간 판단 SVM 모델 개발"
+                    ]
+                },
+                {
+                    "subTitle" : "사용 기술",
+                    "context" : [
+                        "Support Vector Machine을 사용한 지도학습",
+                        "스마트폰 센서 데이터 수집"
+                    ]
+                }
+            ],
+            "github":[]
         }
-    ],
-    "services": [
-        {
-            "id": "1",
-            "title": "Art Direction",
-            "description": "We help with the creation and development of online advertising ideas, with particular focus on their visual appearance."
-        },
-        {
-            "id": "2",
-            "title": "Branding",
-            "description": "We design key brand elements such as the logo, color scheme, typography, and other design components that makes your brand stand out from competitors."
-        },
-        {
-            "id": "3",
-            "title": "Web Design",
-            "description": "We build and optimize your online presence.  Website is the digital entry point into your business and a powerful revenue channel."
-        },
-        {
-            "id": "4",
-            "title": "3D Design",
-            "description": "We combine creative design and technical skills to build striking 3D visualisations that bring your project to life."
-        },
-        {
-            "id": "05f6299a-ebed-4bc2-b5ab-584ebd8787cc",
-            "title": "New Service",
-            "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. "
-        }
-    ],
-    "aboutpara": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+     ]
 }

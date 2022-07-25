@@ -93,16 +93,11 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
                 </h1>
                 {!isBlog ? (
                     <div className="flex">
-                        <Button onClick={handleWorkScroll}>Work</Button>
                         <Button onClick={handleAboutScroll}>About</Button>
-                        {data.showBlog && (
-                            <Button onClick={() => router.push("/blog")}>
-                                Blog
-                            </Button>
-                        )}
+                        <Button onClick={handleWorkScroll}>Project</Button>
                         <Button
                             onClick={() =>
-                                window.open("mailto:hello@chetanverma.com")
+                                window.open("mailto:dlaehd1994@naver.com")
                             }
                         >
                             Contact
